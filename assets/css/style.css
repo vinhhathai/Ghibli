@@ -1,0 +1,494 @@
+/*RESET CSSP[*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* THE SAME PART */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+.text-white{
+    color: white !important;
+}
+
+
+
+
+/*HEADER--------------------------------------------------*/
+#header{
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav >li{
+    display: inline;
+    line-height: 46px; 
+    position: relative;
+}  
+#nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0px 24px;
+}
+   
+#nav >li:hover >a{
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    list-style-type: none;
+    min-width: 160px;
+    display: none;
+    box-shadow: 0px 0px 12px black;
+}
+#nav li:hover .subnav{
+    display:block 
+}
+#nav .subnav a{
+    color: black;
+    text-transform: capitalize;
+    display: block;
+    padding: 0px 12px;
+    line-height: 38px;
+}  
+.subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav .down{
+    font-size: 14px;
+}
+#header .search{
+    float: right;
+    color: white;
+    line-height: 46px;
+    padding: 0px 32px;
+}
+#header .search:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+
+
+
+
+/*  SLIDER-------------------------------*/
+#slider{
+    padding-top: 50%;
+    background-image: url('../img/slider/ghibli_files/ghibli.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    margin-top: 46px;
+}
+.text-slider{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 66px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0px 0px 6px white;
+}
+.header-text-slider{
+    font-size: 24px;
+    font-weight: 900;
+}
+.sub-text-slider{
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 18px;
+}
+/*----------------  content-------------*/
+.content-section{
+    padding: 64px 0px;
+    width: 800px;
+    margin: 0px auto;
+}
+#content .content-header{
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+#content .content-description{
+    margin-top: 24px;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+}
+.content-about{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.member{
+    margin-top: 48px;
+}
+.member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+.member-name{
+}
+.member-img{
+    width: 154px;
+    min-height: 300px;
+    border-radius: 5px;
+    margin-top: 15px;
+
+}
+/*----------------TOUR-----------*/
+.tour{
+    background-color: black;
+    
+}
+.tour-table{
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+.tour-table li{
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+}
+.sold-out{
+    font-size: 15px;
+    padding: 3px 4px;
+    margin-left: 16px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+}
+.quantity{
+    font-size: 15px;
+    float: right;
+    background-color: black;
+    color: white;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+}
+.tour-place{  
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.tour-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0px 8px;
+}
+.tour-img{
+    width: 100%;
+    display: block;
+}
+.tour-img:hover{
+    opacity: 0.6;
+}
+.tour-about{
+  background-color: white;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.tour-location{
+    font-size: 15px;
+    font-weight: 600;
+}
+.tour-date{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+.tour-description{
+    margin-top: 15px;
+}
+.tour-button{
+    margin-top: 15px;
+    padding: 12px 16px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.tour-button:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.contact-section{
+    margin-top: 32px;
+}
+.contact-about{
+    display: inline-block;
+}
+.contact-icon{
+    padding: 4px 5px;
+    font-size: 18px;
+}
+.contact-loca{
+    margin-right: 4px;
+}
+.contact-mobile{
+    margin-right: 4px;
+   
+}
+.contact-email{
+    margin-right: 4px;
+   padding: 4px 4px;
+}
+.contact-input{
+    float: right;
+    font-size: 15px;
+   
+}
+.input-name{
+    display: inline-block;
+    padding:8px 4px;
+    outline: none;
+}
+.input-email{
+    display: inline-block;
+    padding:8px 4px;
+   outline: none;
+}
+.input-massage{
+    display: block;
+    padding:8px 4px;
+    width: 100%;
+    margin-top: 8px;
+    outline: none;
+}
+.send-button{
+    float: right;
+    padding: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.send-button:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*fooooooooooter*/
+#footer{
+
+}
+.footer-img{
+    width: 100%;
+}
+.footer-contact{
+    text-align: center;
+    font-size: 27px;
+    padding: 64px;
+   
+}
+.footer-des{
+    font-size: 15px;
+    padding-top: 32px;
+    color: gray;  
+}
+.link-des{
+    color: gray;
+}
+.foot-contact{
+    text-decoration: none;
+    color: gray;
+}
+.modal.open{
+   display: flex;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.main-modal{
+    width: 900px;
+    min-height: 300px;
+    background-color: white;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalAni ease 0.5s;
+}
+.modal-header{
+    background-color: #009688;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.modal-bag{
+    margin-right: 15px;
+}
+.modal-close{
+    position: absolute;
+    right: 0px;
+   padding: 12px;
+   color: rgb(255, 255, 255);
+   opacity: 0.6;
+}
+.modal-close:hover{
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    margin-bottom: 12px;
+}
+.modal-input{
+   padding: 10px 12px;
+   width: 100%;
+   margin-bottom: 24px;
+}
+.modal-button{
+    padding: 18px 0px;
+    width: 100%;
+    border: none;
+    font: 15px;
+    color: white;
+    background-color: #009688;
+}
+.modal-check{
+    margin-left: 2px;
+}
+.modal-button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.modal-help{
+    float: right;
+    padding: 16px;
+}
+.help{
+    color: blue;
+}
+@keyframes modalAni{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px );
+    }
+}
+
+
+
+/*---------------------*/
+@media only screen and (min-width: 64em){
+    /*PCcccccccccccccccccccccccc*/
+    #mobile-menu{
+        display: none;
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+   /*Tabletttttttttttttttttttttt*/
+   .content-section{
+       width: 100%;
+       padding: 64px 16px;
+       margin: 0px auto;
+   }
+}
+@media only screen and (max-width: 46.1875em){
+   /*Monileeeeeeeeeeeeeeeeeeeee*/
+   #header{
+       overflow: hidden;
+   }
+   .content-section{
+       width: 100%;
+       padding: 64px 16px;
+    }
+    #mav > li {
+        display: block;
+    }
+    #nav li a{
+        display: block;
+    }
+    #header .search{
+        display: none;
+    }
+    #mobile-menu{
+        float: right;
+        color: white;
+        line-height: 46px;
+        padding: 0px 32px;
+    }
+
+    .member-item{
+        width: 100%;
+        padding-top: 32px;
+    }
+    .member-img{
+        min-height: 100%;
+    }
+    .tour-item{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .tour-button{
+        width: 100%;
+    }
+    .contact-input{
+        width: 100%;
+    }
+    .input-massage,
+    .input-email,
+    .input-name{
+        display: block;
+        padding:12px 4px;
+        width: 100%;
+        outline: none;
+        margin-top: 16px;
+    }
+    .send-button{
+        width: 100%;
+        padding:16px;
+        margin-top: 32px;
+    }
+}
+
+
+
+/* Mobile: width  < 740px */
+
+/* Tablet: width >= 740px and width <1024px */
+
+/* PC: width >= 1024px */
